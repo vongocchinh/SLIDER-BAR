@@ -113,6 +113,9 @@
   border-radius: 10px;
   margin-bottom: 5px;
   cursor: pointer;
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-direction: column;
 }
 
 .menu-item .menu-link {
@@ -152,9 +155,12 @@
 .menu-item:hover {
   background-color: #eaeaea1e;
 }
+.menu-item:hover .icon-down{
+    transform: rotate(180deg);
+}
 
 .menu-item.active {
-  background-color: #065df5;
+  background-color: #065ef551;
 }
 
 .menu-item .menu-link {
@@ -175,7 +181,7 @@
   cursor: pointer;
   height: 0px;
   display: flex;
-  transition: 0.5s;
+  transition: 0.9s all ease-in-out;
   overflow: hidden;
 }
 .link-page{
@@ -195,14 +201,14 @@
 }
 
 .menu-item .down-ul.hide{
-    display: none;
+    height: 0px;
 }
 
 
 /* .menu-item:hover .icon-down{
     transform: rotate(180deg);
 } */
-.menu-item:focus-visible .icon-down{
+.menu-item:hover .icon-down{
     transform: rotate(180deg);
 }
 
@@ -225,7 +231,9 @@
     height: 50px;
 } */
 
-
+/* .menu-item:hover .down-ul,.menu-item:focus .down-ul{
+    height: 100px;
+} */
 
 #style-1::-webkit-scrollbar-track {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);

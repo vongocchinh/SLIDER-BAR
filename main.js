@@ -15,9 +15,15 @@ var downClasp = document.getElementsByClassName("menu-link");
 var i;
 for (i = 0; i < downClasp.length; i++) {
   downClasp[i].addEventListener("click", function () {
+
     const a = this.nextElementSibling;
     a.classList.toggle("show");
-    const pr = this.previousElementSibling;
+    // var j=0;
+    // while(j<downClasp.length){
+    //   const a=this.downClasp[j].nextElementSibling;
+    //   j++;
+    //   a.classList.toggle('hide');
+    // }
   });
 }
 
